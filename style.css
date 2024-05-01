@@ -1,12 +1,40 @@
 body {
   margin: 0;
-  padding: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  background-color: #222; /* Donkere achtergrond */
+  font-family: 'Montserrat', sans-serif; /* Gebruik Montserrat-lettertype */
+  color: #fff; /* Witte tekstkleur */
   display: flex;
-  align-items: center;
   justify-content: center;
-  flex-direction: column;
-  font-family: "Roboto", sans-serif;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column; /* Plaats de teksten onder elkaar */
+  text-align: center; /* Centreer de tekst */
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Zet het canvas naar achteren */
+}
+/* Stijl voor de eerste tekst */
+#text-big {
+  font-size: 60px;
+  margin-bottom: 12px; /* Voeg wat ruimte toe onder de eerste tekst */
+  z-index: 1; /* Zet de tekst naar voren */
+}
+
+#text-small {
+  font-size: 24px;
+  margin-bottom: 40px; /* Voeg wat ruimte toe onder de eerste tekst */
+  z-index: 1; /* Zet de tekst naar voren */
+}
+
+#text-little {
+  font-size: 16px;
+  margin-bottom: 20px; /* Voeg wat ruimte toe onder de eerste tekst */
+  z-index: 1; /* Zet de tekst naar voren */
 }
 
 header {
@@ -49,7 +77,7 @@ form {
   width: 32.5rem;
 }
 
-input {
+/*input {
   display: flex;
   border: none;
   box-shadow: 0px 6px 10px rgb(255, 255, 255);
@@ -74,7 +102,7 @@ button.submit {
 
 button.submit:hover {
   background-color: rgb(255, 255, 255);
-}
+}*/
 
 @keyframes spin {
   0% {
