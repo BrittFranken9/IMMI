@@ -17,52 +17,63 @@ form.addEventListener('submit', handleForm);
 
 // AI image generation
 const getImage = async (value) => {
+  // Hide all elements with the id 'tekst'
+  document.querySelector('.text').style.display = 'none';
 
-    console.log(value);
 
-            // add the loading class
-            imageContainer.classList.add('loading');
+  // Hide loading spinner
+  imageContainer.classList.add('loading');
 
-            // clear Image
-            imageContainer.innerHTML = '';
-            
-            try {
+  // Clear Image
+  imageContainer.innerHTML = '';
 
-                const response = await fetch("https://api.openai.com/v1/images/generations", {
-                    method: 'POST',
-                    headers: {
-                        "Content-Type": "application/json",
-                        authorization: `Bearer ${OPENAI_API_KEY}`,
-                    },
-                    body: JSON.stringify({
-                        prompt: `Create a beautiful artwork using this description ${value}`,
-                        n: 1,
-                        size: "512x512",
-                    }),
-                });
+  try {
+      const response = await fetch("https://api.openai.com/v1/images/generations", {
+          method: 'POST',
+          headers: {
+              "Content-Type": "application/json",
+              authorization: `Bearer ${OPENAI_API_KEY}`,
+          },
+          body: JSON.stringify({
+              prompt: `Create a beautiful artwork with many blue and purple tints using this description ${value}`,
+              n: 1,
+              size: "512x512",
+          }),
+      });
 
-                const result = await response.json();
-                console.log(result);
+      const result = await response.json();
 
-                // remove the loading class from image container
-                imageContainer.classList.remove('loading');
+      // Remove loading spinner
+      imageContainer.classList.remove('loading');
 
-                // iterate through the results
-                result.data.forEach((item) => {
-                    if (item.url) { // Changed from item.url to image.url
-                        const img = document.createElement("img");
-                        img.src = item.url;
-                        img.alt = input;
-                        imageContainer.appendChild(img);
-                    }
-                });
+      // Show elements with the id 'tekst'
+      document.querySelectorAll('#tekst > *').forEach(element => {
+          element.style.display = 'block';
+      });
 
-                input.value = '';
+      // iterate through the results
+      result.data.forEach((item) => {
+          if (item.url) {
+              const img = new Image();
+              img.onload = function() {
+                  // Hide all text elements after the image is fully loaded
+                  document.querySelectorAll('.loading-text').forEach(element => {
+                      element.classList.add('hidden');
+                  });
+              };
+              img.src = item.url;
+              img.alt = input;
+              imageContainer.appendChild(img);
+          }
+      });
 
-            } catch (error) {
-                console.log(error);
-            }
- }
+      input.value = '';
+
+  } catch (error) {
+      console.log(error);
+  }
+}
+
 
 
 
@@ -75,11 +86,13 @@ ws.onopen = function() {
 
 ws.onmessage = function(event) {
   console.log('Message from server ', event.data);
-  getImage(event.data)
-
-
- 
+  if (event.data === "1") {
+      location.reload(); // Refresh the page
+  } else {
+      getImage(event.data);
+  }
 }
+
 
 // background animation
 
