@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavalamp Achtergrond</title>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #222; /* Donkere achtergrond */
+    font-family: 'Montserrat', sans-serif; /* Gebruik Montserrat-lettertype */
+    color: #fff; /* Witte tekstkleur */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column; /* Plaats de teksten onder elkaar */
+    text-align: center; /* Centreer de tekst */
+  }
+  canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; /* Zet het canvas naar achteren */
+  }
+</style>
+</head>
+<body>
+<canvas id="lavalamp"></canvas>
+
+<script>
+const canvas = document.getElementById('lavalamp');
+const ctx = canvas.getContext('2d');
+
+// Set canvas size to screen size
+canvas.width = window.innerWidth;
+canvas.height = window.innerHeight;
+
+// Function to create a bubble
+function createBubble() {
+  const radius = Math.random() * 30 + 10; // Random size
+  const centerX = canvas.width / 2;
+  const centerY = canvas.height / 2;
+  const angle = Math.random() * Math.PI * 2; // Random angle
+  const x = centerX + Math.cos(angle) * 200; // Radius of circular motion
+  const y = centerY + Math.sin(angle) * 200; // Radius of circular motion
+  const color = getRandomColor();
+  const speed = Math.random() * 2 + 1; // Random speed
+
+  return { x, y, radius, color, speed, angle };
+}
+
+// Generate random colors in purple and blue shades
+function getRandomColor() {
+  const purpleBlueColors = ['#6A5ACD', '#8A2BE2', '#9370DB', '#7B68EE', '#483D8B', '#4169E1'];
+  return purpleBlueColors[Math.floor(Math.random() * purpleBlueColors.length)];
+}
+
+// Bubbles array
+let bubbles = [];
+
+// Function to draw bubbles
+function drawBubbles() {
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
+  bubbles.forEach((bubble, index) => {
+    ctx.beginPath();
+    ctx.arc(bubble.x, bubble.y, bubble.radius, 0, Math.PI * 2);
+    ctx.fillStyle = bubble.color;
+    ctx.fill();
+
+    // Update angle for circular motion
+    bubble.angle += 0.02; // Adjust speed of circular motion
+
+    // Update bubble position
+    bubble.x = canvas.width / 2 + Math.cos(bubble.angle) * 200;
+    bubble.y = canvas.height / 2 + Math.sin(bubble.angle) * 200;
+
+    // If the bubble goes off the screen, remove it
+    if (bubble.x + bubble.radius < 0 || bubble.x - bubble.radius > canvas.width ||
+        bubble.y + bubble.radius < 0 || bubble.y - bubble.radius > canvas.height) {
+      bubbles.splice(index, 1);
+    }
+  });
+
+  // Regularity of new bubbles
+  if (Math.random() < 0.05) { // Adjust this value for more or fewer bubbles
+    bubbles.push(createBubble());
+  }
+
+  // Continue drawing bubbles
+  requestAnimationFrame(drawBubbles);
+}
+
+// Start the animation
+drawBubbles();
+</script>
+</body>
+</html>
