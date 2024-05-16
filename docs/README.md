@@ -4,6 +4,8 @@
 
 
  ![Foto van het begin scherm](/docs/Begin%20scherm.png)
+
+Deze installatie is gekomen uit het idee om een ruimte te creëeren waar iedereen 
 verhaal => Britt
 
 # Materiaal / Benodigdheden
