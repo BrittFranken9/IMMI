@@ -2,7 +2,7 @@
 
 #### By Britt Franken en Esteban Martinez
 
- ![Tux, the Linux mascot](/Beginscherm.jpg)
+ ![Foto van het begin scherm](/docs/Begin%20scherm.png)
 verhaal => Britt
 
 # Materiaal / Benodigdheden
