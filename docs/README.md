@@ -4,9 +4,15 @@
 
 verhaal => Britt
 
-### Materiaal / Benodigdheden
+# Materiaal / Benodigdheden
 
 => Britt
+#### Software:
+- Visual Studio Code
+- Basic Code Knowledge
+- Open AI generator
+- Github
+- NodeRed
 
 ### Stap 1
 
