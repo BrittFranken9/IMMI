@@ -6,13 +6,30 @@ verhaal => Britt
 
 # Materiaal / Benodigdheden
 
-=> Britt
+#### Materiaal:
+- Beamer
+- Stoel om de beamer op te zetten
+- Laptop
+- Verdeelstekker
+- Hdmi kabel
+- Donkere ruimte
+- Kussens
+- Kleuren verlichting
+- Knoppen (wit en blauw)
+- Glazenplaat
+- Camera
+
 #### Software:
 - Visual Studio Code
 - Basic Code Knowledge
 - Open AI generator
 - Github
 - NodeRed
+- MakerCase
+
+#### Tools:
+- Lazercutter
+- Boormachine
 
 # Stap 1
 
