@@ -53,8 +53,9 @@ Api key in code zetten => Esteban
 
 # Stap 5
 
-Alles in map staat klaar om te starten nu.
-nu npm run dev doen => Britt
+Alles in je map staat nu klaar om te starten.
+
+Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar `http://localhost:3000/`
 
 # Stap 6
 
@@ -67,6 +68,7 @@ Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. D
 
 # Stap 7
 
+ ![Foto 3D model doos](/docs/Tafel%203D%20opmaak%20(1).png)
 Code is in orde nu de doos maken => Britt
 
 # Stap 8
