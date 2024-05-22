@@ -88,7 +88,11 @@ Daarnaast zoek je nog een glazenplaat die past bovenop de tafel. Deze mag niet k
 
 # Stap 9
 
-Als de tafel in elkaar zit kan je alle kabels in de tafel installeren. Je verbind de raspberry met de groene plaat en steekt deze in het bovenste vakje. Daarnaast laat je alle kabels in de doos naar beneden zakken en zorg je ervoor dat de beamer verbonden kan worden met de raspberry en de laptop die in de tafel steken. In het onderste gedeeldte steekt dus nog een laptop omdat de raspberry het niet altijd aankan. Daarna plaats je de beamer op een stoel vooraan de tafel zodat deze op de muur gericht kan worden.
+Als de tafel in elkaar zit kan je alle kabels in de tafel installeren. Je verbind de raspberry met de groene plaat en steekt deze in het bovenste vakje. In de groene plaat zitten verschillende kabels die ervoor zorgen dat onze knoppen werken. Ook steekt er een batterij in met kabels die ervoor zorgt dat de knoppen ligt geven. Dit is dan weer om de sfeer erin te krijgen.
+
+Daarnaast laat je alle kabels in de doos naar beneden zakken en zorg je ervoor dat de beamer verbonden kan worden met de raspberry en de laptop die in de tafel steken. In het onderste gedeeldte steekt dus nog een laptop omdat de raspberry het niet altijd aankan. Daarna plaats je de beamer op een stoel vooraan de tafel zodat deze op de muur gericht kan worden.
+
+Als laatste plaats je nog een lamp in de tafel zelf. Deze is nodig om de foto goed te trekken. Deze kan je verstoppen onder het vakje waar de raspberry inzit zodat niemand deze ziet. Bij de tafel leg je ook een wit blad of een witte plaat die je er telkens bovenop kan leggen voor je een foto trekt. Deze houd het licht tegen en zorgt ervoor dat de foto goed gemaakt kan worden en dat het herkant wat er ligt.
 
 ![Opzet van de tafel](/docs/Opzet%20met%20foto.jpg)
 
@@ -98,8 +102,10 @@ Naar de host gaan om scherm te krijgen => Esteban
 
 # Stap 11
 
-Alles staat nu gereed, alleen de ruimte moet nog donker gemaakt worden => Britt
+Nu is het nog belangrijk om de ruimte donker te krijgen. Dit doe je door alluminiumfolie met water tegen de raam te plakken. Zo komt er geen licht meer binnen en is de ruimte duister geworden.
+
+Om deze duisternis was gezelliger te maken gebruiken we de kleuren verlichting, deze zetten we op blauw-groen zodat het wat rustiger word als mensen binnen komen. Ook hebben we nog een wat straffere lamp die ervoor zorgt dat je alles ziet.
 
 # Stap 12
 
-De aankleding doen met kussens => Britt
+Als allerlaatste stap doe je de aankleding van de ruimte, hier leg je kussens en/of enkele dekens om het wat knusser te maken zoals een echte snoezelruimte.
