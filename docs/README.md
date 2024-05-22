@@ -5,8 +5,9 @@
 
  ![Foto van het begin scherm](/docs/Begin%20scherm.png)
 
-Deze installatie is gekomen uit het idee om een ruimte te creëeren waar iedereen 
-verhaal => Britt
+Deze installatie is ontstaan vanuit het idee om een ruimte te creëren waar iedereen tot rust kan komen. Het concept lijkt op een snoezelruimte, maar met een unieke draai:
+
+bezoekers kunnen zelf hun omgeving vormgeven door te tekenen, waarna hun creaties de ruimte inkleden.
 
 # Materiaal / Benodigdheden
 
