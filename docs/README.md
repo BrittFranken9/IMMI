@@ -118,3 +118,5 @@ Om deze duisternis was gezelliger te maken gebruiken we de kleuren verlichting, 
 # Stap 12
 
 Als allerlaatste stap doe je de aankleding van de ruimte, hier leg je kussens en/of enkele dekens om het wat knusser te maken zoals een echte snoezelruimte.
+
+![Aankleding van de ruimte](/docs/Aankleding%20ruimte.jpg)
