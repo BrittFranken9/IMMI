@@ -42,7 +42,9 @@ Snoezelruimtes worden vaak gebruikt voor personen op een buitengewone school, wa
 
 # Stap 1
 
-github clonen => Esteban
+Voor dat we van start kunnen gaan moeten we eerst de github code op de computer krijgen, door te clonen. Dit doe je als volgt:
+
+Je opent de link 
 
 # Stap 2
 
