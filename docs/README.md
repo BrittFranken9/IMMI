@@ -42,9 +42,13 @@ Snoezelruimtes worden vaak gebruikt voor personen op een buitengewone school, wa
 
 # Stap 1
 
-Voor dat we van start kunnen gaan moeten we eerst de github code op de computer krijgen, door te clonen. Dit doe je als volgt:
+Voordat we van start kunnen gaan, moeten we eerst de GitHub-code op de computer krijgen door deze te klonen. Volg hiervoor de onderstaande stappen:
 
-Je opent de link 
+- Open de link: *[Github Serene Sketch](https://github.com/BrittFranken9/IMMI)*
+- Kopieer de link die je nodig hebt vanuit de groene knop met de tekst "Code".
+- Open je terminal en navigeer naar de map waarin je de code wilt klonen.
+- Typ in deze map het volgende commando: `git clone` gevolgd door de gekopieerde link.
+- Druk op Enter om de code te klonen.
 
 # Stap 2
 
@@ -52,7 +56,7 @@ APi key installeren => Esteban
 
 # Stap 3
 
-In terminal map openen => Esteban
+Vervolgens kan je in de terminal terug naar de map gaan waar je de code gecloned hebt en doe je `npm install`
 
 # Stap 4
 
