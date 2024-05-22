@@ -9,6 +9,8 @@ Deze installatie is ontstaan vanuit het idee om een ruimte te creëren waar iede
 
 bezoekers kunnen zelf hun omgeving vormgeven door te tekenen, waarna hun creaties de ruimte inkleden.
 
+Snoezelruimtes worden vaak gebruikt voor personen op een buitengewone school, waarbij de personen tot rust moeten kunnen komen. Hierbij kan je denken aan personen met een verstandelijke beperking, autisme, ADHD, ... .
+
 # Materiaal / Benodigdheden
 
 #### Materiaal:
