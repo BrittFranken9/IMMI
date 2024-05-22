@@ -22,6 +22,8 @@ verhaal => Britt
 - Knoppen (wit en blauw)
 - Glazenplaat
 - Camera
+- Raspberry PI
+- Kabels
 
 #### Software:
 - Visual Studio Code
@@ -69,18 +71,26 @@ Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. D
 # Stap 7
 
  ![Foto 3D model doos](/docs/Tafel%203D%20opmaak%20(1).png)
+
 Nu de code klaarstaat, moet de tafel gemaakt worden. Hier zie je hoe de tafel in sketchup is vormgegeven, zo weet je al ongeveer hoe hij eruit komt te zien als je de tafel in elkaar gestoken hebt.
 
 ![Foto van doos in Illustrator 1](/docs/Tafel%20makercase.png)
 
+Deze illustrator file download je en zet je op een usb stick. Vervolgens ga je deze cutten met de lazercutter. Nadat deze helemaal is gecut ga je nog enkele gaten boren om ervoor te zorgen dat je overal je kabels kan wegwerken of naar buiten kan laten komen.
+
 # Stap 8
 
-Doos in elkaar steken => Britt
+![Tafel in elkaar zetten](/docs/Tafel%20in%20elkaar%20opbouw.jpg)
+
+Nadat de doos volledig klaar is steek je hem in elkaar, let hierbij op dat je eerst de camera goed plakt aan de onderkant van de grootste plank met het gatje in. Hier moet je opletten dat de camera in de goede richting word geplakt zodat de foto's een beetje logisch getrokken worden. De tafel in elkaar steken gebeurd zoals je op de foto ziet, en zoals je zag op de sketchup. Er is rekening gehouden met de kabels en de raspberry die in de tafel verwerkt gaat worden.
+
+Daarnaast zoek je nog een glazenplaat die past bovenop de tafel. Deze mag niet kleiner zijn dan 31 op 32 centimeter. Zo kan deze niet in het gat vallen en kan je hem vastmaken op het tafelblad. Wij hebben dit met overschotten gedaan van het lazercutten, door deze vlka naast de plaat vast te lijmen, maar dit kan je evengoed gewoon vastlijmen of gewoon los laten liggen.
 
 # Stap 9
 
-Alles in de doos installeren. Alle kabels door de gaten steken en de beamer op een stoel plaatsen met de kabels eraan.
-=> Esteban / Britt
+Als de tafel in elkaar zit kan je alle kabels in de tafel installeren. Je verbind de raspberry met de groene plaat en steekt deze in het bovenste vakje. Daarnaast laat je alle kabels in de doos naar beneden zakken en zorg je ervoor dat de beamer verbonden kan worden met de raspberry en de laptop die in de tafel steken. In het onderste gedeeldte steekt dus nog een laptop omdat de raspberry het niet altijd aankan. Daarna plaats je de beamer op een stoel vooraan de tafel zodat deze op de muur gericht kan worden.
+
+![Opzet van de tafel](/docs/Opzet%20met%20foto.jpg)
 
 # Stap 10
 
