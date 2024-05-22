@@ -69,7 +69,9 @@ Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. D
 # Stap 7
 
  ![Foto 3D model doos](/docs/Tafel%203D%20opmaak%20(1).png)
-Code is in orde nu de doos maken => Britt
+Nu de code klaarstaat, moet de tafel gemaakt worden. Hier zie je hoe de tafel in sketchup is vormgegeven, zo weet je al ongeveer hoe hij eruit komt te zien als je de tafel in elkaar gestoken hebt.
+
+![Foto van doos in Illustrator 1](/docs/Tafel%20makercase.png)
 
 # Stap 8
 
