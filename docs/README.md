@@ -52,11 +52,13 @@ Voordat we van start kunnen gaan, moeten we eerst de GitHub-code op de computer 
 
 # Stap 2
 
-APi key installeren => Esteban
+Vervolgens kan je in de terminal terug naar de map gaan waar je de code gecloned hebt en doe je `npm install`
 
 # Stap 3
 
-Vervolgens kan je in de terminal terug naar de map gaan waar je de code gecloned hebt en doe je `npm install`
+Na je Stap 2 hebt gedaan ga je in de terminal `npm install openai@^4.0.0`.
+Dit moet je doen om de API key van OpenAI te kunnen gebruiken. Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. Zo niet dan zou ik er een aanmaken. (*[OpenAI](https://platform.openai.com/apps))
+APi key installeren => Esteban
 
 # Stap 4
 
