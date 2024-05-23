@@ -56,12 +56,15 @@ Vervolgens kan je in de terminal terug naar de map gaan waar je de code gecloned
 
 # Stap 3
 
-Na je Stap 2 hebt gedaan ga je in de terminal `npm install openai@^4.0.0`.Dit moet je doen om de API key van OpenAI te kunnen gebruiken. 
+Na je Stap 2 hebt gedaan ga je in de terminal `npm install openai@^4.0.0`.Dit moet je doen om de API key van OpenAI te kunnen gebruiken. Nu moet alles geïnstalleerd zijn. 
+
 Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. Zo niet dan zou ik er een aanmaken. ([OpenAI](https://platform.openai.com/apps))
+
 APi key installeren => Esteban
 
 # Stap 4
 
+Nu gaan we de API Key aanmaken en in de code zetten. Nadat je bent ingelogged bij OpenAI. Normaal gezien krijg je de opties ChatGPT of API en wij gaan natuurlijk API kiezen. Daarna ga je naar het slotje met het naam API keys. Als je daarop hebt geklikt ziet je de optie van `+ Create new secret key`. Klik daarop en geef het een naam (Optioneel) dan drup op `Create secret key`. als je dit alles hebt gedaan dan kopieer je de Key en zet je het in de code bij de map apiKey.example.js.
 Api key in code zetten => Esteban
 
 # Stap 5
