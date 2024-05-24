@@ -75,6 +75,16 @@ Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar
 
 # Stap 6
 
+Nu zullen we de code een beetje uitleggen van hoe het in elkaar zit. Ik deel dit op in 4 delen `html`, `css`, `javascript` en `Node Red`.
+
+### htmml:
+De `html` is vrij simpel. Die is ingedeeld in 2 delen. De eerste zie je canvas en die is voor de achtergrond animatie en homepage. Ook wordt dit gebruikt voor de loadingscreen maar dat wordt uitgelegd bij `javascript`. 
+
+Daarna komt het gedeelte waar onze ai image tevoorschijn komt. Daarin kan je nog andere functies zien in `<form>` dat is voor als je images wilt genereren met tekst.
+
+### css: 
+
+
 Code uitleg => Esteban
 
 Voorbeeld:
