@@ -88,6 +88,7 @@ Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. D
 
 ### javascript:
 
+
 ### Node Red:
 De Node Red is de gedeeltde dat je gebruikt via de Raspberry Pi. Als je [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet heb geinstaleerd klik op de link ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Eenmaal je dat hebt gedaan en alles hebt geinstalleerd heb je normaal gezien ook Node Red erin gezet. 
 
