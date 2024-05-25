@@ -60,12 +60,9 @@ Na je Stap 2 hebt gedaan ga je in de terminal `npm install openai@^4.0.0`.Dit mo
 
 Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. Zo niet dan zou ik er een aanmaken. ([OpenAI](https://platform.openai.com/apps))
 
-APi key installeren => Esteban
-
 # Stap 4
 
 Nu gaan we de API Key aanmaken en in de code zetten. Nadat je bent ingelogged bij OpenAI. Normaal gezien krijg je de opties ChatGPT of API en wij gaan natuurlijk API kiezen. Daarna ga je naar het slotje met het naam API keys. Als je daarop hebt geklikt ziet je de optie van `+ Create new secret key`. Klik daarop en geef het een naam (Optioneel) dan drup op `Create secret key`. als je dit alles hebt gedaan dan kopieer je de Key en zet je het in de code bij de map apiKey.example.js.
-Api key in code zetten => Esteban
 
 # Stap 5
 
@@ -78,19 +75,32 @@ Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar
 Nu zullen we de code een beetje uitleggen van hoe het in elkaar zit. Ik deel dit op in 4 delen `html`, `css`, `javascript` en `Node Red`.
 
 ### htmml:
+index.html:
 De `html` is vrij simpel. Die is ingedeeld in 2 delen. De eerste zie je canvas en die is voor de achtergrond animatie en homepage. Ook wordt dit gebruikt voor de loadingscreen maar dat wordt uitgelegd bij `javascript`. 
 
-Daarna komt het gedeelte waar onze ai image tevoorschijn komt. Daarin kan je nog andere functies zien in `<form>` dat is voor als je images wilt genereren met tekst.
+Daarna komt het gedeelte waar onze ai image tevoorschijn komt. Daarin kan je nog andere functies zien in `<form>` dat is voor als je images wilt genereren met tekst maar voor nu is dat een comment en niet zichtbaar op de webpagina.
+
+loadingscreen.html:
+Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. Deze is al toegevoegd in de `javascript`. Waardoor je dit kan negeren. Dit staat er nog voor referentie voor hoe wij op de loadingscreen zijn gekomen.
 
 ### css: 
 
 
-Code uitleg => Esteban
+### javascript:
 
-Voorbeeld:
+### Node Red:
+De Node Red is de gedeeltde dat je gebruikt via de Raspberry Pi. Als je [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet heb geinstaleerd klik op de link ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Eenmaal je dat hebt gedaan en alles hebt geinstalleerd heb je normaal gezien ook Node Red erin gezet. 
 
-loadingscreen.html:
-Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. Deze komt echter wat later en moet dus in de code zelf nog verplaatst worden...
+Nu kunnen we praten wat we gaan doen met de raspberry pi. De raspberry heeft 2 functies. De eerste is 2 knoppen herkennen wanneer erop wordt gedrukt en tweede is foto's nemen van getekende voorwerp. Daarvoor gaan we nog een paar dingen in de terminal toevoegen. Één ervan is [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) en in de terminal zet je `npm install node-red-contrib-tensorflow`. De tweede is voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera) daarvoor ga je op de terminal `npm install node-red-contrib-usbcamera` en op de terminal van de raspberry PI `sudo apt install fswebcam`. 
+
+Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen van tensor-flow, image tools en usb camera.
+
+![Node-Red]
+
+### Extra commentaar
+
+Bij deze code maken we gebruik van tensor-flow. Omdat OpenAI Vision op het moment van maken van deze code Vision de server blokkeerde. Dit kan nu gefixed zijn bij een update. Wij raden aan om is te kijken of het mogelijk is nu want tensor-flow is heel beberkt en herkent niet veel objecten.
+
 
 # Stap 7
 
