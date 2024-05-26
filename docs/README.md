@@ -84,7 +84,7 @@ loadingscreen.html:
 Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. Deze is al toegevoegd in de `javascript`. Waardoor je dit kan negeren. Dit staat er nog voor referentie voor hoe wij op de loadingscreen zijn gekomen.
 
 ### css: 
-
+De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar verander je bijna alles qua lettertype stijl en positie van de tekst. De rest van de css is voor als je met tekst ai images genereren wilt werken. Dan zijn er de stijl voor de tekst en daar verandert je de grote van u lettertype. 
 
 ### javascript:
 

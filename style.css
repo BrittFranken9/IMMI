@@ -18,7 +18,8 @@ canvas {
   left: 0;
   z-index: -1; /* Zet het canvas naar achteren */
 }
-/* Stijl voor de eerste tekst */
+
+/* Stijl voor de tekst */
 #text-big {
   font-size: 60px;
   margin-bottom: 12px; /* Voeg wat ruimte toe onder de eerste tekst */
@@ -48,6 +49,7 @@ select.imageContainer {
   justify-content: center;
 }
 
+/* als je met tekst wilt werken*/
 select.inputContainer {
   padding: 1rem 0 0 0;
   display: flex;
