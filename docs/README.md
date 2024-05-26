@@ -87,12 +87,18 @@ Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. D
 De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar verander je bijna alles qua lettertype stijl en positie van de tekst. De rest van de css is voor als je met tekst ai images genereren wilt werken. Dan zijn er de stijl voor de tekst en daar verandert je de grote van u lettertype. 
 
 ### javascript:
+Bij de javascript is het bij de code zelf als ingedeeld met titels overals zodat je weet wat wat is. Maar ik zal kort uitleggen wat alles doet. De eerste deel zijn de variable en de nodige imports (api key en style). Daarna komt de lijn om te zorgen dat als je een image gaat genereren dat de webpagina niet refresht. 
 
+Volgende is onze image generator. Hier in ga je bij `prompt` zetten wat je afbeelding wil laten worden met de beschrijving van de foto.
+
+Dan komt de websocket en dat is de connectie tussen de raspberry PI en onze computer. 
+
+Als laatste is onze animaties. Dit is ingedeeld in twee delen. Één is voor de achtergrond animatie en de andere is voor de loading animatie. 
 
 ### Node Red:
 De Node Red is de gedeeltde dat je gebruikt via de Raspberry Pi. Als je [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet heb geinstaleerd klik op de link ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Eenmaal je dat hebt gedaan en alles hebt geinstalleerd heb je normaal gezien ook Node Red erin gezet. 
 
-Nu kunnen we praten wat we gaan doen met de raspberry pi. De raspberry heeft 2 functies. De eerste is 2 knoppen herkennen wanneer erop wordt gedrukt en tweede is foto's nemen van getekende voorwerp. Daarvoor gaan we nog een paar dingen in de terminal toevoegen. Één ervan is [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) en in de terminal zet je `npm install node-red-contrib-tensorflow`. De tweede is voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera) daarvoor ga je op de terminal `npm install node-red-contrib-usbcamera` en op de terminal van de raspberry PI `sudo apt install fswebcam`. 
+Nu kunnen we praten wat we gaan doen met de raspberry pi. De raspberry heeft 2 functies. De eerste is 2 knoppen herkennen wanneer erop wordt gedrukt en tweede is foto's nemen van getekende voorwerp. Daarvoor gaan we nog een paar dingen in de terminal toevoegen. Één ervan is [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) en in de terminal zet je `npm install node-red-contrib-tensorflow`. Dit zorgt ervoor dat een afbeelding beschreven kan worden met woorden. De tweede is voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera) daarvoor ga je op de terminal `npm install node-red-contrib-usbcamera` en op de terminal van de raspberry PI `sudo apt install fswebcam`. Deze zorgt ervoor dat we foto's kunnen maken met een webcam. 
 
 Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen van tensor-flow, image tools en usb camera.
 
@@ -100,8 +106,9 @@ Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen
 
 ### Extra commentaar
 
-Bij deze code maken we gebruik van tensor-flow. Omdat OpenAI Vision op het moment van maken van deze code Vision de server blokkeerde. Dit kan nu gefixed zijn bij een update. Wij raden aan om is te kijken of het mogelijk is nu want tensor-flow is heel beberkt en herkent niet veel objecten.
+Bij deze code maken we gebruik van tensor-flow. Omdat OpenAI Vision op het moment van maken van deze code Vision de server blokkeerde. Dit kan nu gefixed zijn bij een update. Wij raden aan om is te kijken of het mogelijk is nu want tensor-flow is heel beberkt en herkent niet veel objecten. Deze 2 opties is om te zorgen dat afbeelingen worden beschreven in woorden voor de javascript code.
 
+Ook kan er bij de Node red en Websocket code een verandering gebeuren. Daar kan je zorgen dat als je op de kop drukt voor een foto te trekken, dat ineens de loading screen animatie gebeurt.
 
 # Stap 7
 

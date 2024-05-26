@@ -155,7 +155,7 @@ function drawOriginalBubbles() {
 // Start the original animation
 drawOriginalBubbles();
 
-// Animation triggered by server message
+// Loading Animation triggered by server message
 function startServerMessageAnimation() {
     const serverMessageCanvas = document.getElementById('lavalamp');
     const serverMessageCtx = serverMessageCanvas.getContext('2d');
