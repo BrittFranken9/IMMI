@@ -64,8 +64,10 @@ Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. 
 
 Nu gaan we de API Key aanmaken en in de code zetten. Nadat je bent ingelogged bij OpenAI. Normaal gezien krijg je de opties ChatGPT of API en wij gaan natuurlijk API kiezen. 
 ![apps](/docs/openai_apps.png)
+
 Daarna ga je naar het slotje met het naam API keys. 
 ![key](/docs/choice.png)
+
 Als je daarop hebt geklikt ziet je de optie van `+ Create new secret key`. Klik daarop en geef het een naam (Optioneel) dan drup op `Create secret key`. als je dit alles hebt gedaan dan kopieer je de Key en zet je het in de code bij de map apiKey.example.js.
 ![api_key](/docs/api_key.png)
 
@@ -82,14 +84,17 @@ Nu zullen we de code een beetje uitleggen van hoe het in elkaar zit. Ik deel dit
 ### htmml:
 index.html:
 De `html` is vrij simpel. Die is ingedeeld in 2 delen. De eerste zie je canvas en die is voor de achtergrond animatie en homepage. Ook wordt dit gebruikt voor de loadingscreen maar dat wordt uitgelegd bij `javascript`. 
+![canvas](/docs/canvas.png)
 
 Daarna komt het gedeelte waar onze ai image tevoorschijn komt. Daarin kan je nog andere functies zien in `<form>` dat is voor als je images wilt genereren met tekst maar voor nu is dat een comment en niet zichtbaar op de webpagina.
+![canvas](/docs/image_container.png)
 
 loadingscreen.html:
 Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. Deze is al toegevoegd in de `javascript`. Waardoor je dit kan negeren. Dit staat er nog voor referentie voor hoe wij op de loadingscreen zijn gekomen.
 
 ### css: 
 De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar verander je bijna alles qua lettertype stijl en positie van de tekst. De rest van de css is voor als je met tekst ai images genereren wilt werken. Dan zijn er de stijl voor de tekst en daar verandert je de grote van u lettertype. 
+![canvas](/docs/css.png)
 
 ### javascript:
 Bij de javascript is het bij de code zelf als ingedeeld met titels overals zodat je weet wat wat is. Maar ik zal kort uitleggen wat alles doet. De eerste deel zijn de variable en de nodige imports (api key en style). Daarna komt de lijn om te zorgen dat als je een image gaat genereren dat de webpagina niet refresht. 
