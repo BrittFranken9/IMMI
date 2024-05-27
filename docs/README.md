@@ -63,7 +63,9 @@ Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. 
 # Stap 4
 
 Nu gaan we de API Key aanmaken en in de code zetten. Nadat je bent ingelogged bij OpenAI. Normaal gezien krijg je de opties ChatGPT of API en wij gaan natuurlijk API kiezen. 
+
 [apps](docs/openai_apps.png)
+
 Daarna ga je naar het slotje met het naam API keys. 
 [key](docs/choice.png)
 Als je daarop hebt geklikt ziet je de optie van `+ Create new secret key`. Klik daarop en geef het een naam (Optioneel) dan drup op `Create secret key`. als je dit alles hebt gedaan dan kopieer je de Key en zet je het in de code bij de map apiKey.example.js.
