@@ -98,12 +98,17 @@ De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar ver
 
 ### javascript:
 Bij de javascript is het bij de code zelf als ingedeeld met titels overals zodat je weet wat wat is. Maar ik zal kort uitleggen wat alles doet. De eerste deel zijn de variable en de nodige imports (api key en style). Daarna komt de lijn om te zorgen dat als je een image gaat genereren dat de webpagina niet refresht. 
+![canvas](/docs/variables.png)
 
 Volgende is onze image generator. Hier in ga je bij `prompt` zetten wat je afbeelding wil laten worden met de beschrijving van de foto.
+![canvas](/docs/ai_generator.png)
 
 Dan komt de websocket en dat is de connectie tussen de raspberry PI en onze computer. 
+![canvas](/docs/websocket.png)
 
 Als laatste is onze animaties. Dit is ingedeeld in twee delen. Één is voor de achtergrond animatie en de andere is voor de loading animatie. 
+![canvas](/docs/animatie.png)
+![canvas](/docs/loading_animatie.png)
 
 ### Node Red:
 De Node Red is de gedeeltde dat je gebruikt via de Raspberry Pi. Als je [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet heb geinstaleerd klik op de link ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Eenmaal je dat hebt gedaan en alles hebt geinstalleerd heb je normaal gezien ook Node Red erin gezet. 
@@ -112,7 +117,7 @@ Nu kunnen we praten wat we gaan doen met de raspberry pi. De raspberry heeft 2 f
 
 Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen van tensor-flow, image tools en usb camera.
 
-![Node-Red]
+![Node-Red](/docs/node_red.jpg)
 
 ### Extra commentaar
 
