@@ -100,7 +100,7 @@ De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar ver
 Bij de javascript is het bij de code zelf als ingedeeld met titels overals zodat je weet wat wat is. Maar ik zal kort uitleggen wat alles doet. De eerste deel zijn de variable en de nodige imports (api key en style). Daarna komt de lijn om te zorgen dat als je een image gaat genereren dat de webpagina niet refresht. 
 ![canvas](/docs/variables.png)
 
-Volgende is onze image generator. Hier in ga je bij `prompt` zetten wat je afbeelding wil laten worden met de beschrijving van de foto.
+Volgende is onze image generator. Hier in ga je bij `prompt` zetten wat je afbeelding wil laten worden met de beschrijving van de foto. Hierin kan je ook de hoeveelheid en groote van de afbeelding veranderen.
 ![canvas](/docs/ai_generator.png)
 
 Dan komt de websocket en dat is de connectie tussen de raspberry PI en onze computer. 
@@ -124,6 +124,8 @@ Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen
 Bij deze code maken we gebruik van tensor-flow. Omdat OpenAI Vision op het moment van maken van deze code Vision de server blokkeerde. Dit kan nu gefixed zijn bij een update. Wij raden aan om is te kijken of het mogelijk is nu want tensor-flow is heel beberkt en herkent niet veel objecten. Deze 2 opties is om te zorgen dat afbeelingen worden beschreven in woorden voor de javascript code.
 
 Ook kan er bij de Node red en Websocket code een verandering gebeuren. Daar kan je zorgen dat als je op de kop drukt voor een foto te trekken, dat ineens de loading screen animatie gebeurt.
+
+Nog een exr
 
 # Stap 7
 
@@ -155,7 +157,7 @@ Als laatste plaats je nog een lamp in de tafel zelf. Deze is nodig om de foto go
 
 # Stap 10
 
-Naar de host gaan om scherm te krijgen => Esteban
+Nadat je Stap 9 hebt gedaan ga je eigenlijk doen wat je altijd hebt gedaan om aan de code te werken. Je gaat op u laptop koppelen met de Raspbery PI en controleren dat alle kabels geconnecteert zijn.(ethernet kabe, kabels dat het koppelt met de 2 knoppen,...) Daarna open je de `terminal` in de laptop. Daar log je in om in de Raspberry PI te geraken. Dan activeer je Node Red (`node-red-start`). Dan open je nog een `terminal` om in uw map te geraken met de code. Daarin doet je `npm run dev` om de local host te activeren en zet je die in een web browser naar keuze.
 
 # Stap 11
 
