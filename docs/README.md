@@ -83,53 +83,58 @@ Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar
 
 # Stap 6
 
-Nu zullen we de code een beetje uitleggen van hoe het in elkaar zit. Ik deel dit op in 4 delen `html`, `css`, `javascript` en `Node Red`.
+Nu volgt een uitleg van hoe de code in elkaar zit, onderverdeeld in vier delen: `html`, `css`, `javascript` en `Node Red`.
 
-### htmml:
+
+### html:
 index.html:
-De `html` is vrij simpel. Die is ingedeeld in 2 delen. De eerste zie je canvas en die is voor de achtergrond animatie en homepage. Ook wordt dit gebruikt voor de loadingscreen maar dat wordt uitgelegd bij `javascript`. 
+
+De `html` is vrij eenvoudig en bestaat uit twee delen. Het eerste deel bevat het canvas, dat wordt gebruikt voor de achtergrondanimatie en de homepage. Dit canvas wordt ook gebruikt voor het laadscherm, maar dit wordt uitgelegd bij `javascript`.
 ![canvas](/docs/canvas.png)
 
-Daarna komt het gedeelte waar onze ai image tevoorschijn komt. Daarin kan je nog andere functies zien in `<form>` dat is voor als je images wilt genereren met tekst maar voor nu is dat een comment en niet zichtbaar op de webpagina.
+Daarna volgt het gedeelte waar de AI-afbeelding verschijnt. Hier zijn ook andere functies te zien in het `<form>`-element, bedoeld voor het genereren van afbeeldingen met tekst. Deze functies zijn momenteel als commentaar toegevoegd en zijn niet zichtbaar op de webpagina.
 ![canvas](/docs/image_container.png)
 
 loadingscreen.html:
-Is het laadscherm dat tevoorschijn komt als je op de blauwe knop hebt gedrukt. Deze is al toegevoegd in de `javascript`. Waardoor je dit kan negeren. Dit staat er nog voor referentie voor hoe wij op de loadingscreen zijn gekomen.
+
+Dit is het laadscherm dat verschijnt wanneer op de blauwe knop wordt gedrukt. Dit is al geïntegreerd in de `javascript` en kan daarom genegeerd worden. Het is hier alleen ter referentie om te laten zien hoe het laadscherm is geïmplementeerd.
 
 ### css: 
-De css is vrij simpel. Het belangrijkste zijn vooral de body en canvas. Daar verander je bijna alles qua lettertype stijl en positie van de tekst. De rest van de css is voor als je met tekst ai images genereren wilt werken. Dan zijn er de stijl voor de tekst en daar verandert je de grote van u lettertype. 
+
+De css is ook vrij eenvoudig. Het belangrijkste zijn de stijlen voor de body en het canvas. Hierin worden voornamelijk het lettertype, de stijl en de positie van de tekst aangepast. De rest van de css is bedoeld voor het genereren van AI-afbeeldingen met tekst. Hierin worden de stijlen voor de tekst aangepast, zoals de grootte van het lettertype.
 ![canvas](/docs/css.png)
 
 ### javascript:
-Bij de javascript is het bij de code zelf als ingedeeld met titels overals zodat je weet wat wat is. Maar ik zal kort uitleggen wat alles doet. De eerste deel zijn de variable en de nodige imports (api key en style). Daarna komt de lijn om te zorgen dat als je een image gaat genereren dat de webpagina niet refresht. 
+
+In de `javascript`-code zijn de verschillende delen getiteld zodat duidelijk is wat elk deel doet. Hier volgt een korte uitleg van de functies:
+
+- Variabelen en imports: Hier worden de benodigde variabelen en imports (zoals de API-sleutel en stijlen) gedeclareerd.
 ![canvas](/docs/variables.png)
 
-Volgende is onze image generator. Hier in ga je bij `prompt` zetten wat je afbeelding wil laten worden met de beschrijving van de foto. Hierin kan je ook de hoeveelheid en groote van de afbeelding veranderen.
+- Image generator: In dit deel wordt de afbeelding gegenereerd. Bij `prompt` wordt beschreven wat de afbeelding moet weergeven. Hier kunnen ook de hoeveelheid en grootte van de afbeeldingen worden aangepast.
 ![canvas](/docs/ai_generator.png)
 
-Dan komt de websocket en dat is de connectie tussen de raspberry PI en onze computer. 
+- WebSocket: Dit zorgt voor de verbinding tussen de Raspberry Pi en de computer.
 ![canvas](/docs/websocket.png)
 
-Als laatste is onze animaties. Dit is ingedeeld in twee delen. Één is voor de achtergrond animatie en de andere is voor de loading animatie. 
+- Animaties: Dit is opgedeeld in twee delen: één voor de achtergrondanimatie en één voor de laadanimatie.
 ![canvas](/docs/animatie.png)
 ![canvas](/docs/loading_animatie.png)
 
 ### Node Red:
-De Node Red is de gedeeltde dat je gebruikt via de Raspberry Pi. Als je [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet heb geinstaleerd klik op de link ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Eenmaal je dat hebt gedaan en alles hebt geinstalleerd heb je normaal gezien ook Node Red erin gezet. 
 
-Nu kunnen we praten wat we gaan doen met de raspberry pi. De raspberry heeft 2 functies. De eerste is 2 knoppen herkennen wanneer erop wordt gedrukt en tweede is foto's nemen van getekende voorwerp. Daarvoor gaan we nog een paar dingen in de terminal toevoegen. Één ervan is [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) en in de terminal zet je `npm install node-red-contrib-tensorflow`. Dit zorgt ervoor dat een afbeelding beschreven kan worden met woorden. De tweede is voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera) daarvoor ga je op de terminal `npm install node-red-contrib-usbcamera` en op de terminal van de raspberry PI `sudo apt install fswebcam`. Deze zorgt ervoor dat we foto's kunnen maken met een webcam. 
+Node Red wordt gebruikt via de Raspberry Pi. Als de [Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/) nog niet is geïnstalleerd, klik dan op de link voor de installatie ([Install Raspberry PI](https://meeplemaker.github.io/idl4-cc-rpi-install/)). Nadat alles is geïnstalleerd, is ook Node Red beschikbaar.
 
-Nu gaan we in Node Red de foto hieronder na maken. Daar ge je plug-ins toevoegen van tensor-flow, image tools en usb camera.
+De Raspberry Pi heeft twee functies: het herkennen van twee knoppen en het maken van foto's van getekende voorwerpen. Hiervoor moeten enkele dingen in de terminal worden toegevoegd. Installeer [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) met `npm install node-red-contrib-tensorflow`. Dit zorgt ervoor dat een afbeelding kan worden beschreven met woorden. Voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera), gebruik `npm install node-red-contrib-usbcamera` en op de Raspberry Pi terminal `sudo apt install fswebcam`. Dit zorgt ervoor dat we foto's kunnen maken met een webcam.
 
+Maak in Node Red het onderstaande schema na door plug-ins toe te voegen voor TensorFlow, image tools en de USB-camera.
 ![Node-Red](/docs/node_red.jpg)
 
 ### Extra commentaar
 
-Bij deze code maken we gebruik van tensor-flow. Omdat OpenAI Vision op het moment van maken van deze code Vision de server blokkeerde. Dit kan nu gefixed zijn bij een update. Wij raden aan om is te kijken of het mogelijk is nu want tensor-flow is heel beberkt en herkent niet veel objecten. Deze 2 opties is om te zorgen dat afbeelingen worden beschreven in woorden voor de javascript code.
+In deze code wordt TensorFlow gebruikt omdat OpenAI Vision op het moment van ontwikkeling de server blokkeerde. Dit probleem kan inmiddels zijn opgelost met een update. Het is aan te raden om te controleren of dit nu werkt, aangezien TensorFlow beperkt is en niet veel objecten herkent. Beide opties zorgen ervoor dat afbeeldingen in woorden worden beschreven voor de `javascript`-code.
 
-Ook kan er bij de Node red en Websocket code een verandering gebeuren. Daar kan je zorgen dat als je op de kop drukt voor een foto te trekken, dat ineens de loading screen animatie gebeurt.
-
-Nog een exr
+Er kunnen ook wijzigingen worden aangebracht in de Node Red- en WebSocket-code. Bijvoorbeeld, door ervoor te zorgen dat wanneer op de knop wordt gedrukt om een foto te maken, de laadschermanimatie direct start.
 
 # Stap 7
 
