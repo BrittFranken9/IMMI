@@ -67,12 +67,15 @@ Dit kan je doen via volgende link:
 # Stap 4
 
 Wanneer je account in orde is en de API-sleutel is geïnstalleerd in je terminal, kun je deze aanmaken en in de code zetten. Als je bent ingelogd bij OpenAI, krijg je de optie om ChatGPT of API te kiezen. Hier kies je voor API.
+
 <img src="/docs/openai_apps.png" alt="apps" width="400">
 
 Daarna ga je naar het slotje met de naam API keys.
+
 <img src="/docs/choice.png" alt="key" width="400">
 
 Als je daarop hebt geklikt, zie je de optie `+ Create new secret key`. Klik hierop en geef het een naam (optioneel), daarna klik je op `Create secret key`. Wanneer je dit hebt gedaan, kopieer je de sleutel en zet je deze in de code in het bestand apiKey.example.js.
+
 <img src="/docs/api_key.png" alt="api_key" width="400">
 
 
@@ -91,9 +94,11 @@ Nu volgt een uitleg van hoe de code in elkaar zit, onderverdeeld in vier delen: 
 index.html:
 
 De `html` is vrij eenvoudig en bestaat uit twee delen. Het eerste deel bevat het canvas, dat wordt gebruikt voor de achtergrondanimatie en de homepage. Dit canvas wordt ook gebruikt voor het laadscherm, maar dit wordt uitgelegd bij `javascript`.
+
 <img src="/docs/canvas.png" alt="canvas" width="400">
 
 Daarna volgt het gedeelte waar de AI-afbeelding verschijnt. Hier zijn ook andere functies te zien in het `<form>`-element, bedoeld voor het genereren van afbeeldingen met tekst. Deze functies zijn momenteel als commentaar toegevoegd en zijn niet zichtbaar op de webpagina.
+
 <img src="/docs/image_container.png" alt="image container sizing" width="400">
 
 loadingscreen.html:
@@ -103,6 +108,7 @@ Dit is het laadscherm dat verschijnt wanneer op de blauwe knop wordt gedrukt. Di
 ### css: 
 
 De css is ook vrij eenvoudig. Het belangrijkste zijn de stijlen voor de body en het canvas. Hierin worden voornamelijk het lettertype, de stijl en de positie van de tekst aangepast. De rest van de css is bedoeld voor het genereren van AI-afbeeldingen met tekst. Hierin worden de stijlen voor de tekst aangepast, zoals de grootte van het lettertype.
+
 <img src="/docs/css.png" alt="css" width="400">
 
 ### javascript:
@@ -110,15 +116,19 @@ De css is ook vrij eenvoudig. Het belangrijkste zijn de stijlen voor de body en 
 In de `javascript`-code zijn de verschillende delen getiteld zodat duidelijk is wat elk deel doet. Hier volgt een korte uitleg van de functies:
 
 - Variabelen en imports: Hier worden de benodigde variabelen en imports (zoals de API-sleutel en stijlen) gedeclareerd.
+
 <img src="/docs/variables.png" alt="variables" width="400">
 
 - Image generator: In dit deel wordt de afbeelding gegenereerd. Bij `prompt` wordt beschreven wat de afbeelding moet weergeven. Hier kunnen ook de hoeveelheid en grootte van de afbeeldingen worden aangepast.
+
 <img src="/docs/ai_generator.png" alt="ai_generator" width="400">
 
 - WebSocket: Dit zorgt voor de verbinding tussen de Raspberry Pi en de computer.
+
 <img src="/docs/websocket.png" alt="websocket" width="400">
 
 - Animaties: Dit is opgedeeld in twee delen: één voor de achtergrondanimatie en één voor de laadanimatie.
+
 <img src="/docs/animatie.png" alt="animatie" width="400">
 <img src="/docs/loading_animatie.png" alt="loading_animatie" width="400">
 
@@ -129,6 +139,7 @@ Node Red wordt gebruikt via de Raspberry Pi. Als de [Raspberry PI](https://meepl
 De Raspberry Pi heeft twee functies: het herkennen van twee knoppen en het maken van foto's van getekende voorwerpen. Hiervoor moeten enkele dingen in de terminal worden toegevoegd. Installeer [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) met `npm install node-red-contrib-tensorflow`. Dit zorgt ervoor dat een afbeelding kan worden beschreven met woorden. Voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera), gebruik `npm install node-red-contrib-usbcamera` en op de Raspberry Pi terminal `sudo apt install fswebcam`. Dit zorgt ervoor dat we foto's kunnen maken met een webcam.
 
 Maak in Node Red het onderstaande schema na door plug-ins toe te voegen voor TensorFlow, image tools en de USB-camera.
+
 <img src="/docs/node_red.png" alt="node_red" width="400">
 
 ### Extra commentaar
