@@ -67,13 +67,14 @@ Dit kan je doen via volgende link:
 # Stap 4
 
 Wanneer je account in orde is en de API-sleutel is geïnstalleerd in je terminal, kun je deze aanmaken en in de code zetten. Als je bent ingelogd bij OpenAI, krijg je de optie om ChatGPT of API te kiezen. Hier kies je voor API.
-![apps](/docs/openai_apps.png)
+<img src="/docs/openai_apps.png" alt="apps" width="400">
 
-Daarna ga je naar het slotje met de naam API keys. 
-![key](/docs/choice.png)
+Daarna ga je naar het slotje met de naam API keys.
+<img src="/docs/choice.png" alt="key" width="400">
 
 Als je daarop hebt geklikt, zie je de optie `+ Create new secret key`. Klik hierop en geef het een naam (optioneel), daarna klik je op `Create secret key`. Wanneer je dit hebt gedaan, kopieer je de sleutel en zet je deze in de code in het bestand apiKey.example.js.
-![api_key](/docs/api_key.png)
+<img src="/docs/api_key.png" alt="api_key" width="400">
+
 
 # Stap 5
 
@@ -90,10 +91,10 @@ Nu volgt een uitleg van hoe de code in elkaar zit, onderverdeeld in vier delen: 
 index.html:
 
 De `html` is vrij eenvoudig en bestaat uit twee delen. Het eerste deel bevat het canvas, dat wordt gebruikt voor de achtergrondanimatie en de homepage. Dit canvas wordt ook gebruikt voor het laadscherm, maar dit wordt uitgelegd bij `javascript`.
-![canvas](/docs/canvas.png)
+<img src="/docs/canvas.png" alt="canvas" width="400">
 
 Daarna volgt het gedeelte waar de AI-afbeelding verschijnt. Hier zijn ook andere functies te zien in het `<form>`-element, bedoeld voor het genereren van afbeeldingen met tekst. Deze functies zijn momenteel als commentaar toegevoegd en zijn niet zichtbaar op de webpagina.
-![canvas](/docs/image_container.png)
+<img src="/docs/image_container.png" alt="image container sizing" width="400">
 
 loadingscreen.html:
 
@@ -102,24 +103,24 @@ Dit is het laadscherm dat verschijnt wanneer op de blauwe knop wordt gedrukt. Di
 ### css: 
 
 De css is ook vrij eenvoudig. Het belangrijkste zijn de stijlen voor de body en het canvas. Hierin worden voornamelijk het lettertype, de stijl en de positie van de tekst aangepast. De rest van de css is bedoeld voor het genereren van AI-afbeeldingen met tekst. Hierin worden de stijlen voor de tekst aangepast, zoals de grootte van het lettertype.
-![canvas](/docs/css.png)
+<img src="/docs/css.png" alt="css" width="400">
 
 ### javascript:
 
 In de `javascript`-code zijn de verschillende delen getiteld zodat duidelijk is wat elk deel doet. Hier volgt een korte uitleg van de functies:
 
 - Variabelen en imports: Hier worden de benodigde variabelen en imports (zoals de API-sleutel en stijlen) gedeclareerd.
-![canvas](/docs/variables.png)
+<img src="/docs/variables.png" alt="variables" width="400">
 
 - Image generator: In dit deel wordt de afbeelding gegenereerd. Bij `prompt` wordt beschreven wat de afbeelding moet weergeven. Hier kunnen ook de hoeveelheid en grootte van de afbeeldingen worden aangepast.
-![canvas](/docs/ai_generator.png)
+<img src="/docs/ai_generator.png" alt="ai_generator" width="400">
 
 - WebSocket: Dit zorgt voor de verbinding tussen de Raspberry Pi en de computer.
-![canvas](/docs/websocket.png)
+<img src="/docs/websocket.png" alt="websocket" width="400">
 
 - Animaties: Dit is opgedeeld in twee delen: één voor de achtergrondanimatie en één voor de laadanimatie.
-![canvas](/docs/animatie.png)
-![canvas](/docs/loading_animatie.png)
+<img src="/docs/animatie.png" alt="animatie" width="400">
+<img src="/docs/loading_animatie.png" alt="loading_animatie" width="400">
 
 ### Node Red:
 
@@ -128,7 +129,7 @@ Node Red wordt gebruikt via de Raspberry Pi. Als de [Raspberry PI](https://meepl
 De Raspberry Pi heeft twee functies: het herkennen van twee knoppen en het maken van foto's van getekende voorwerpen. Hiervoor moeten enkele dingen in de terminal worden toegevoegd. Installeer [tensor-flow](https://flows.nodered.org/node/node-red-contrib-tensorflow) met `npm install node-red-contrib-tensorflow`. Dit zorgt ervoor dat een afbeelding kan worden beschreven met woorden. Voor de [usbcamera](https://flows.nodered.org/node/node-red-contrib-usbcamera), gebruik `npm install node-red-contrib-usbcamera` en op de Raspberry Pi terminal `sudo apt install fswebcam`. Dit zorgt ervoor dat we foto's kunnen maken met een webcam.
 
 Maak in Node Red het onderstaande schema na door plug-ins toe te voegen voor TensorFlow, image tools en de USB-camera.
-![Node-Red](/docs/node_red.jpg)
+<img src="/docs/node_red.png" alt="node_red" width="400">
 
 ### Extra commentaar
 
@@ -138,17 +139,17 @@ Er kunnen ook wijzigingen worden aangebracht in de Node Red- en WebSocket-code. 
 
 # Stap 7
 
- ![Foto 3D model doos](/docs/Tafel%203D%20opmaak%20(1).png)
+<img src="/docs/Tafel%203D%20opmaak%20(1).png" alt="Foto 3D model doos" width="400">
 
 Nu de code klaarstaat, moet de tafel gemaakt worden. Hier zie je hoe de tafel in sketchup is vormgegeven, zo weet je al ongeveer hoe hij eruit komt te zien als je de tafel in elkaar gestoken hebt.
 
-![Foto van doos in Illustrator 1](/docs/Tafel%20makercase.png)
+<img src="/docs/Tafel%20makercase.png" alt="Foto van doos in illustrator" width="400">
 
 Deze illustrator file download je en zet je op een usb stick. Vervolgens ga je deze cutten met de lazercutter. Nadat deze helemaal is gecut ga je nog enkele gaten boren om ervoor te zorgen dat je overal je kabels kan wegwerken of naar buiten kan laten komen.
 
 # Stap 8
 
-![Tafel in elkaar zetten](/docs/Tafel%20in%20elkaar%20opbouw.jpg)
+<img src="/docs/Tafel%20in%20elkaar%20opbouw.jpg" alt="Tafel in elkaar zetten" width="400">
 
 Nadat de doos volledig klaar is steek je hem in elkaar, let hierbij op dat je eerst de camera goed plakt aan de onderkant van de grootste plank met het gatje in. Hier moet je opletten dat de camera in de goede richting word geplakt zodat de foto's een beetje logisch getrokken worden. De tafel in elkaar steken gebeurd zoals je op de foto ziet, en zoals je zag op de sketchup. Er is rekening gehouden met de kabels en de raspberry die in de tafel verwerkt gaat worden.
 
@@ -162,7 +163,7 @@ Laat alle kabels naar beneden in de doos zakken en zorg ervoor dat de beamer kan
 
 Plaats ten slotte een lamp in de tafel zelf. Deze lamp is nodig om goede foto's te maken. Verberg de lamp onder het vakje waar de Raspberry Pi zich bevindt, zodat deze niet zichtbaar is. Leg ook een wit blad of een witte plaat op de tafel voordat je een foto maakt. Dit helpt om het licht te blokkeren en zorgt ervoor dat de foto goed wordt gemaakt en dat het object duidelijk zichtbaar is.
 
-![Opzet van de tafel](/docs/Opzet%20met%20foto.jpg)
+<img src="/docs/Opzet%20met%20foto.jpg" alt="Opzet van de tafel" width="400">
 
 # Stap 10
 
@@ -178,4 +179,4 @@ Om deze duisternis gezelliger te maken, gebruiken we gekleurde verlichting. We k
 
 Als allerlaatste stap doe je de aankleding van de ruimte, hier leg je kussens en/of enkele dekens om het wat knusser te maken zoals een echte snoezelruimte.
 
-![Aankleding van de ruimte](/docs/Aankleding%20ruimte.jpg)
+<img src="/docs/Aankleding%20ruimte.jpg" alt="Aankleding van de ruimte" width="400">
