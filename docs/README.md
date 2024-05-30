@@ -3,7 +3,7 @@
 #### By Britt Franken en Esteban Martinez
 
 
- ![Foto van het begin scherm](/docs/Begin%20scherm.png)
+ <img src="/docs/Begin%20scherm.png" alt="Foto van het begin scherm" width="600">
 
 Deze installatie is ontstaan vanuit het idee om een ruimte te creëren waar iedereen tot rust kan komen. Het concept lijkt op een snoezelruimte, maar met een unieke draai:
 
