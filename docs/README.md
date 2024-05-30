@@ -56,26 +56,30 @@ Vervolgens kan je in de terminal terug naar de map gaan waar je de code gecloned
 
 # Stap 3
 
-Na je Stap 2 hebt gedaan ga je in de terminal `npm install openai@^4.0.0`.Dit moet je doen om de API key van OpenAI te kunnen gebruiken. Nu moet alles geïnstalleerd zijn. 
+Nadat je Stap 2 hebt gedaan ga je in de terminal en geef je `npm install openai@^4.0.0` in. Dit doe je zodat je de API key van OpenAi kan gebruiken. Vanaf dat deze code is ingegeven in je terminal is alles geïnstalleerd.
 
-Het is ook even handig om te zien af je al een account hebt bij OpenAI of niet. Zo niet dan zou ik er een aanmaken. ([OpenAI](https://platform.openai.com/apps))
+Handig om op voorhand te doen:
+- Een account aanmaken bij OpenAi
+
+Dit kan je doen via volgende link:
+([OpenAI](https://platform.openai.com/apps))
 
 # Stap 4
 
-Nu gaan we de API Key aanmaken en in de code zetten. Nadat je bent ingelogged bij OpenAI. Normaal gezien krijg je de opties ChatGPT of API en wij gaan natuurlijk API kiezen. 
+Wanneer je account in orde is en de API-sleutel is geïnstalleerd in je terminal, kun je deze aanmaken en in de code zetten. Als je bent ingelogd bij OpenAI, krijg je de optie om ChatGPT of API te kiezen. Hier kies je voor API.
 ![apps](/docs/openai_apps.png)
 
-Daarna ga je naar het slotje met het naam API keys. 
+Daarna ga je naar het slotje met de naam API keys. 
 ![key](/docs/choice.png)
 
-Als je daarop hebt geklikt ziet je de optie van `+ Create new secret key`. Klik daarop en geef het een naam (Optioneel) dan drup op `Create secret key`. als je dit alles hebt gedaan dan kopieer je de Key en zet je het in de code bij de map apiKey.example.js.
+Als je daarop hebt geklikt, zie je de optie `+ Create new secret key`. Klik hierop en geef het een naam (optioneel), daarna klik je op `Create secret key`. Wanneer je dit hebt gedaan, kopieer je de sleutel en zet je deze in de code in het bestand apiKey.example.js.
 ![api_key](/docs/api_key.png)
 
 # Stap 5
 
-Alles in je map staat nu klaar om te starten.
+Alles in de map staat nu klaar om te starten.
 
-Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar `http://localhost:3000/`
+Enkel nog `npm run dev` invoeren in je terminal bij de juiste map en surfen naar `http://localhost:3000/`.
 
 # Stap 6
 
