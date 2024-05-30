@@ -156,23 +156,23 @@ Daarnaast zoek je nog een glazenplaat die past bovenop de tafel. Deze mag niet k
 
 # Stap 9
 
-Als de tafel in elkaar zit kan je alle kabels in de tafel installeren. Je verbind de raspberry met de groene plaat en steekt deze in het bovenste vakje. In de groene plaat zitten verschillende kabels die ervoor zorgen dat onze knoppen werken. Ook steekt er een batterij in met kabels die ervoor zorgt dat de knoppen ligt geven. Dit is dan weer om de sfeer erin te krijgen.
+Als de tafel in elkaar zit, kun je alle kabels in de tafel installeren. Verbind de Raspberry Pi met de groene plaat en plaats deze in het bovenste vakje. De groene plaat bevat verschillende kabels die ervoor zorgen dat de knoppen werken. Er is ook een batterij met kabels die ervoor zorgt dat de knoppen licht geven, wat bijdraagt aan de sfeer.
 
-Daarnaast laat je alle kabels in de doos naar beneden zakken en zorg je ervoor dat de beamer verbonden kan worden met de raspberry en de laptop die in de tafel steken. In het onderste gedeeldte steekt dus nog een laptop omdat de raspberry het niet altijd aankan. Daarna plaats je de beamer op een stoel vooraan de tafel zodat deze op de muur gericht kan worden.
+Laat alle kabels naar beneden in de doos zakken en zorg ervoor dat de beamer kan worden verbonden met zowel de Raspberry Pi als de laptop die in de tafel is ingebouwd. Er is een laptop in het onderste gedeelte van de tafel omdat de Raspberry Pi niet altijd voldoende capaciteit heeft. Plaats de beamer op een stoel voor de tafel zodat deze op de muur kan worden gericht.
 
-Als laatste plaats je nog een lamp in de tafel zelf. Deze is nodig om de foto goed te trekken. Deze kan je verstoppen onder het vakje waar de raspberry inzit zodat niemand deze ziet. Bij de tafel leg je ook een wit blad of een witte plaat die je er telkens bovenop kan leggen voor je een foto trekt. Deze houd het licht tegen en zorgt ervoor dat de foto goed gemaakt kan worden en dat het herkant wat er ligt.
+Plaats ten slotte een lamp in de tafel zelf. Deze lamp is nodig om goede foto's te maken. Verberg de lamp onder het vakje waar de Raspberry Pi zich bevindt, zodat deze niet zichtbaar is. Leg ook een wit blad of een witte plaat op de tafel voordat je een foto maakt. Dit helpt om het licht te blokkeren en zorgt ervoor dat de foto goed wordt gemaakt en dat het object duidelijk zichtbaar is.
 
 ![Opzet van de tafel](/docs/Opzet%20met%20foto.jpg)
 
 # Stap 10
 
-Nadat je Stap 9 hebt gedaan ga je eigenlijk doen wat je altijd hebt gedaan om aan de code te werken. Je gaat op u laptop koppelen met de Raspbery PI en controleren dat alle kabels geconnecteert zijn.(ethernet kabe, kabels dat het koppelt met de 2 knoppen,...) Daarna open je de `terminal` in de laptop. Daar log je in om in de Raspberry PI te geraken. Dan activeer je Node Red (`node-red-start`). Dan open je nog een `terminal` om in uw map te geraken met de code. Daarin doet je `npm run dev` om de local host te activeren en zet je die in een web browser naar keuze.
+Na het voltooien van Stap 9 ga je verder zoals je gewend bent om aan de code te werken. Koppel je laptop aan de Raspberry Pi en controleer of alle kabels zijn aangesloten (ethernetkabel, kabels naar de twee knoppen, etc.). Open vervolgens de `terminal` op je laptop en log in op de Raspberry Pi. Activeer Node Red met het commando `node-red-start`. Open daarna een nieuwe `terminal` om naar de map met de code te navigeren. Voer daar `npm run dev` uit om de lokale server te starten en open deze in een webbrowser naar keuze.
 
 # Stap 11
 
-Nu is het nog belangrijk om de ruimte donker te krijgen. Dit doe je door alluminiumfolie met water tegen de raam te plakken. Zo komt er geen licht meer binnen en is de ruimte duister geworden.
+Nu is het belangrijk om de ruimte donker te maken. Dit doe je door aluminiumfolie met water tegen de ramen te plakken. Hierdoor komt er geen licht meer binnen en wordt de ruimte verduisterd.
 
-Om deze duisternis was gezelliger te maken gebruiken we de kleuren verlichting, deze zetten we op blauw-groen zodat het wat rustiger word als mensen binnen komen. Ook hebben we nog een wat straffere lamp die ervoor zorgt dat je alles ziet.
+Om deze duisternis gezelliger te maken, gebruiken we gekleurde verlichting. We kiezen voor blauw-groene tinten, zodat het rustgevend is wanneer mensen binnenkomen. Daarnaast hebben we nog een helderdere lamp die ervoor zorgt dat alles goed zichtbaar is.
 
 # Stap 12
 
