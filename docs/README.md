@@ -5,6 +5,8 @@
 
  [<img src="/docs/Begin%20scherm.png" alt="Foto van het begin scherm" width="600">](https://vimeo.com/952840681?share=copy)
 
+ (klik op de afbeelding om een video te zien)
+
 Deze installatie is ontstaan vanuit het idee om een ruimte te creëren waar iedereen tot rust kan komen. Het concept lijkt op een snoezelruimte, maar met een unieke draai:
 
 bezoekers kunnen zelf hun omgeving vormgeven door te tekenen, waarna hun creaties de ruimte inkleden.
