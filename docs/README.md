@@ -11,6 +11,8 @@ bezoekers kunnen zelf hun omgeving vormgeven door te tekenen, waarna hun creatie
 
 Snoezelruimtes worden vaak gebruikt voor personen op een buitengewone school, waarbij de personen tot rust moeten kunnen komen. Hierbij kan je denken aan personen met een verstandelijke beperking, autisme, ADHD, ... .
 
+(https://vimeo.com/952840681?share=copy)
+
 # Materiaal / Benodigdheden
 
 #### Materiaal:
