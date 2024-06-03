@@ -3,7 +3,7 @@
 #### By Britt Franken en Esteban Martinez
 
 
- <img src="/docs/Begin%20scherm.png" alt="Foto van het begin scherm" width="600">
+ [<img src="/docs/Begin%20scherm.png" alt="Foto van het begin scherm" width="600">](https://vimeo.com/952840681?share=copy)
 
 Deze installatie is ontstaan vanuit het idee om een ruimte te creëren waar iedereen tot rust kan komen. Het concept lijkt op een snoezelruimte, maar met een unieke draai:
 
@@ -11,7 +11,7 @@ bezoekers kunnen zelf hun omgeving vormgeven door te tekenen, waarna hun creatie
 
 Snoezelruimtes worden vaak gebruikt voor personen op een buitengewone school, waarbij de personen tot rust moeten kunnen komen. Hierbij kan je denken aan personen met een verstandelijke beperking, autisme, ADHD, ... .
 
-(https://vimeo.com/952840681?share=copy)
+
 
 # Materiaal / Benodigdheden
 
