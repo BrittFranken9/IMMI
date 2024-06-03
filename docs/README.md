@@ -3,7 +3,7 @@
 #### By Britt Franken en Esteban Martinez
 
 
- [<img src="/docs/Begin%20scherm.png" alt="Foto van het begin scherm" width="800">](https://vimeo.com/952840681?share=copy)
+ [<img src="https://vimeo.com/952840681?share=copy" alt="Foto van het begin scherm" width="800">](https://vimeo.com/952840681?share=copy)
 
  (klik op de afbeelding om een video te zien)
 
